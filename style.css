@@ -1,0 +1,1057 @@
+/* *********************--HEADER--********************* */
+
+
+#MAIN_BODY {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(212, 243, 254);
+
+    min-height: 100%;
+    overflow: auto;
+
+    background: url(resurses/tank_in_pole.png) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+
+}
+
+#header {
+    background-color: rgba(44, 28, 1, 0.795);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    z-index: 2;
+}
+
+#div_head_buttons {
+
+
+    padding-right: 15px;
+
+}
+
+#Main_button,
+#All_articles,
+#galery_button,
+#create_articles_button {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #55555500;
+}
+
+#more_button {
+    display: none;
+}
+
+#login_button {
+
+    font-size: 130%;
+    padding: 5px 10px;
+
+    margin-right: 50px;
+
+    background-color: rgba(173, 177, 96, 0.664);
+}
+
+
+
+
+
+/* *******реалізація початкового зображення******* */
+
+#header_photo {
+    background: url(resurses/tank148-8.jpeg.png) no-repeat center top fixed;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#name_news_panel {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 85%;
+
+    /* background-color: rgba(255, 255, 255, 0.304); */
+    background: linear-gradient(to top, rgba(114, 94, 68, 0.564) 0%, #283618 100%);
+
+    justify-content: space-between;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+#mh1,
+#mh2,
+#mh3 {
+    color: aliceblue;
+}
+
+
+#top_news {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-left: 1%;
+
+
+}
+
+
+
+
+
+
+
+
+/* для десктопів з екраном більше full-hd */
+@media screen and (min-width: 1920px) {
+    #header_photo {
+        background: url(resurses/mig_29.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 900px;
+        display: flex;
+    }
+}
+
+/* для десктопів з екраном менше full-hd */
+@media screen and (max-width: 1920px) {
+    #header_photo {
+
+        background: url(resurses/tank_in_city---1920_700_.jpg.png) no-repeat center top fixed;
+        height: 698px;
+
+    }
+}
+
+
+
+/* *********************--MAIN--********************* */
+
+#main {
+    display: flex;
+
+}
+
+
+/* -----------MIDDLE-BAR------------- */
+
+#middle-bar {
+    background-color: rgba(0, 255, 255, 0);
+    width: 50%;
+    order: 3;
+
+}
+
+#pole_news {
+    padding-top: 15px;
+    flex-wrap: wrap;
+    display: flex;
+
+    justify-content: center;
+}
+
+#content_news {
+    width: 300px;
+    background-color: rgba(250, 240, 230, 0.684);
+
+
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 2%;
+    z-index: 1;
+
+    margin: 15px;
+
+}
+
+#content_news:hover {
+
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+    background-color: linen;
+
+    transform: scale(1.02);
+
+}
+
+
+
+
+
+
+#content_news_long {
+    width: 500px;
+    background-color: rgba(250, 240, 230, 0.684);
+
+
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 2%;
+    z-index: 1;
+
+    margin: 15px;
+}
+
+
+#content_news_long:hover {
+
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+    background-color: linen;
+
+    transform: scale(1.02);
+
+}
+
+
+
+
+
+
+
+
+#content_news_dsc {
+
+    width: 300px;
+    background-color: rgba(250, 240, 230, 0.684);
+
+
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 2%;
+    z-index: 1;
+
+
+    margin: 10px;
+
+    transform: scale(1.0);
+}
+
+
+#content_news_dsc:before {
+
+    content: "Top news";
+    background-color: rgb(123, 126, 69);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+    z-index: 2;
+
+}
+
+
+#content_news_dsc:hover {
+
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+    background-color: linen;
+
+    transform: scale(1.02);
+
+}
+
+
+
+#content_news_extra {
+
+    width: 300px;
+    background-color: rgba(252, 197, 197, 0.684);
+
+
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 2%;
+    z-index: 1;
+
+
+    margin: 10px;
+
+    transform: scale(1.0);
+}
+
+
+#content_news_extra:before {
+
+    content: "News of the day";
+    background-color: rgb(126, 69, 69);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+    z-index: 2;
+
+}
+
+
+#content_news_extra:hover {
+
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+    background-color: rgb(252, 197, 197);
+
+    transform: scale(1.02);
+
+}
+
+
+
+
+
+
+
+
+#button_open {
+
+    background-color: rgba(224, 181, 138, 0.531);
+    width: 100%;
+    height: 30px;
+
+
+    transition: all 0.2s ease;
+    font-size: 110%;
+    font-weight: bold;
+
+    margin-bottom: auto;
+
+
+
+}
+
+#button_open:hover {
+    background-color: rgb(224, 181, 138);
+
+
+}
+
+
+
+
+
+
+
+
+#foto_1 {
+    width: 300px;
+    height: 150px;
+
+    background-color: black;
+    background-image: url(resurses/himars_smile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#foto_2 {
+    width: 300px;
+    height: 150px;
+
+    background-color: black;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+/* -----------LEFT-BAR------------- */
+
+#news_div_bar {
+
+    /* background-color: azure; */
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#barnews_time {
+
+    background-color: rgba(0, 255, 255, 0);
+
+    margin-right: 5%;
+
+}
+
+#left-bar {
+    background-color: rgba(114, 94, 68, 0.564);
+    width: 25%;
+
+    order: 1;
+}
+
+
+/* -----------RIGHT-BAR------------- */
+#right-bar {
+    background-color: rgba(114, 94, 68, 0.564);
+    width: 25%;
+
+
+    order: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************--FOOTER--********************* */
+
+#footer {
+    margin-top: 10px;
+    height: 125px;
+
+    padding-right: 5%;
+
+    background-color: rgba(0, 0, 0, 0.971);
+
+    color: floralwhite;
+
+    font-size: 200%;
+
+    display: flex;
+    justify-content: end;
+    /* Горизонтальне центрування */
+
+    align-items: center;
+    /* Вертикальне центрування */
+}
+
+#devoloper_id {
+    padding-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Для планшетних екранів (менше 960 пікселів) */
+@media screen and (max-width: 960px) {
+
+
+    #name_news_panel {
+        display: flex;
+        flex-direction: row;
+
+        font-size: 45%;
+
+        /* background-color: rgba(255, 255, 255, 0.304); */
+        background-color: rgba(44, 28, 1, 0.99);
+
+        justify-content: space-between;
+
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+
+
+    /* *********************--HEADER--********************* */
+    #Main_icon img {
+        width: 125px;
+        /* Змініть це значення на те, яке вам потрібно */
+    }
+
+    #login_button {
+
+        font-size: 75%;
+        padding: 5px 10px;
+
+        margin-right: 50px;
+
+        background-color: rgba(173, 177, 96, 0.664);
+    }
+
+
+    #Main_button,
+    #All_articles,
+    #galery_button,
+    #create_articles_button {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        background-color: #55555500;
+
+        font-size: 75%;
+    }
+
+    #div_head_buttons div {
+        margin-top: 10px;
+    }
+
+    #menu_button {
+        display: none;
+        background-color: rgba(202, 206, 130, 0.991);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* *********************--FOOTER--********************* */
+
+    #footer {
+
+        margin-top: 8px;
+
+        height: 90px;
+
+        padding-right: 3%;
+
+        font-size: 134%;
+
+    }
+
+    #gerb_photo img {
+
+        width: 40px;
+    }
+
+
+}
+
+
+#menu_button {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(44, 28, 1, 0.795);
+    position: fixed;
+    top: 42px;
+    /* Встановіть відстань від верху, яка вам підходить */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.mobile-menu-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #55555500;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+/* *For mobile devices* */
+@media (max-width: 768px) {
+
+    /* *********************--HEADER--********************* */
+
+
+
+    #header {
+        background-color: rgba(44, 28, 1, 0.795);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        z-index: 2;
+    }
+
+    #Main_icon img {
+        width: 65px;
+    }
+
+    #login_button {
+        font-size: 75%;
+        padding: 5px 10px;
+        margin-right: 20px;
+        background-color: rgba(173, 177, 96, 0.664);
+    }
+
+    #div_head_buttons {
+        display: flex;
+        gap: 5px;
+        /* Додано gap для створення відступу між кнопками */
+        flex-wrap: wrap;
+        /* Обгортка для кнопок */
+    }
+
+    #Main_button,
+    #All_articles,
+    #galery_button,
+    #create_articles_button {
+        display: none;
+    }
+
+    #menu_button {
+        display: inline;
+    }
+
+
+    #header_photo {
+
+
+        background: url(resurses/tank148-8.jpeg.png) no-repeat center top fixed;
+
+        height: 600px;
+
+    }
+
+
+
+    /* *********************--MAIN--********************* */
+
+    #main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    /* -----------MIDDLE-BAR------------- */
+
+    #middle-bar {
+        background-color: rgba(0, 255, 255, 0);
+        width: 100%;
+        order: 1;
+
+    }
+
+    #pole_news {
+        padding-top: 5px;
+        flex-wrap: wrap;
+        display: flex;
+
+        justify-content: center;
+    }
+
+    #content_news {
+        width: 150px;
+        background-color: rgba(250, 240, 230, 0.684);
+
+
+        padding: 10px;
+        transition: all 0.2s ease;
+        border-radius: 2%;
+        z-index: 1;
+
+        margin: 15px;
+
+    }
+
+    #content_news:hover {
+
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+        background-color: linen;
+
+        transform: scale(1.02);
+
+    }
+
+
+
+
+    #content_news_long {
+        width: 200px;
+        background-color: rgba(250, 240, 230, 0.684);
+
+        display: flex;
+        justify-items: center;
+
+        padding: 10px;
+        transition: all 0.2s ease;
+        border-radius: 2%;
+        z-index: 1;
+
+        margin: 15px;
+
+    }
+
+    #content_news:hover {
+
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+        background-color: linen;
+
+        transform: scale(1.02);
+
+    }
+
+
+
+
+
+    #content_news_dsc {
+
+        width: 150px;
+        background-color: rgba(250, 240, 230, 0.684);
+
+
+        padding: 10px;
+        transition: all 0.2s ease;
+        border-radius: 2%;
+        z-index: 1;
+
+
+        margin: 10px;
+
+        transform: scale(1.0);
+    }
+
+    #content_news_dsc:before {
+
+        content: "Top news";
+        background-color: rgb(123, 126, 69);
+        color: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        z-index: 2;
+
+    }
+
+
+    #content_news_dsc:hover {
+
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+        background-color: linen;
+
+        transform: scale(1.02);
+
+    }
+
+
+
+
+
+    #content_news_extra {
+
+        width: 150px;
+        background-color: rgba(252, 197, 197, 0.684);
+
+
+        padding: 10px;
+        transition: all 0.2s ease;
+        border-radius: 2%;
+        z-index: 1;
+
+
+        margin: 10px;
+
+        transform: scale(1.0);
+    }
+
+    #content_news_extra:before {
+
+        content: "News of the day";
+        background-color: rgb(126, 69, 69);
+        color: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        z-index: 2;
+
+    }
+
+
+    #content_news_extra:hover {
+
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+        background-color: rgb(252, 197, 197);
+
+        transform: scale(1.02);
+
+    }
+
+
+
+
+
+
+
+    #button_open {
+
+        background-color: rgba(224, 181, 138, 0.531);
+        width: 100%;
+        height: 20px;
+
+
+        transition: all 0.2s ease;
+        font-size: 80%;
+        font-weight: bold;
+
+
+
+
+
+    }
+
+    #button_open:hover {
+        background-color: rgb(224, 181, 138);
+
+
+    }
+
+
+    #foto_1 {
+        width: 150px;
+        height: 75px;
+
+        background-color: black;
+        background-image: url(resurses/himars_smile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+
+
+
+    #foto_2 {
+        width: 150px;
+        height: 75px;
+
+        background-color: black;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #foto_2 img {
+        width: 150px;
+    }
+
+
+
+
+
+
+    #ch2 {
+        font-size: 20px;
+    }
+
+    #cp {
+        font-size: 15px;
+    }
+
+
+
+
+    /* -----------LEFT-BAR------------- */
+
+    #news_div_bar {
+
+        /* background-color: azure; */
+
+        padding: 10px;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #barnews_time {
+
+        background-color: rgba(0, 255, 255, 0);
+
+        margin-right: 3%;
+
+    }
+
+    #left-bar {
+        background-color: rgba(255, 248, 220, 0.491);
+        width: 100%;
+        order: 3;
+
+        font-size: 18px;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    /* -----------RIGHT-BAR------------- */
+    #right-bar {
+        /* background-color: rgba(114, 94, 68, 0.564); */
+
+        background-color: rgba(255, 248, 220, 0.491);
+
+        width: 100%;
+
+        font-size: 18px;
+        order: 4;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #name_news_panel {
+
+        justify-content: center;
+
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+
+    #mh1,
+    #mh3 {
+        color: aliceblue;
+        display: none;
+    }
+
+
+
+    #centr_planka {
+        display: flex;
+
+        order: 2;
+    }
+
+    #name_news_panel-mobl {
+
+
+
+        font-size: 85%;
+
+
+        /* background-color: rgba(255, 255, 255, 0.304); */
+        background: linear-gradient(to top, rgba(114, 94, 68, 0.564) 0%, #283618 100%);
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+
+}
+
+
+/* *********************--FOOTER--********************* */
+
+#footer {
+
+    margin-top: 8px;
+
+    height: 75px;
+
+    padding-right: 3%;
+
+    font-size: 80%;
+
+}
+
+#gerb_photo img {
+
+    width: 25px;
+}
